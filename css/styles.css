@@ -94,6 +94,7 @@ section {
 #navbar__list li:last-child {
   display: none;
 }
+
 .navbar__menu .link__active {
   color: red;
   text-decoration: underline;
@@ -139,7 +140,7 @@ section {
   #navbar__list li {
     display: none;
   }
-  /* Display the hamburger menu  navigation-menu list item and icon */
+  /* Display the hamburger menu  navigation-menu list item */
   #navbar__list li:last-child{
     display: block;
     padding: 1em;
@@ -149,7 +150,10 @@ section {
   }
 }
 
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+/* 
+ * The "responsive" class is added to the `ul` with JavaScript when the user clicks on the icon. 
+ * This class makes the `ul` to look good on small screens by displaying the links vertically instead of horizontally 
+*/
 @media only screen and (max-width: 600px) {
   #navbar__list.responsive {
     position: relative;

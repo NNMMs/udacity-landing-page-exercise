@@ -104,7 +104,7 @@ let observer = new IntersectionObserver(function (entries, observer) {
 }, { threshold: 1 });
 
 
-/* Toggle between adding and removing the "responsive" class to ul when the user clicks on the hamburger icon */
+/* Toggle between adding and removing the "responsive" class to `ul` when the user clicks on the hamburger icon */
 responsiveAnchor = document.getElementById("responsive");
 responsiveAnchor.addEventListener("click", function () {
 
