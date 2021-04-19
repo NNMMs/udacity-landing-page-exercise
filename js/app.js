@@ -101,7 +101,7 @@ let observer = new IntersectionObserver(function (entries, observer) {
             observer.unobserve(entry.target);
         }
     });
-}, { threshold: 1 });
+}, { threshold: 0.75 });
 
 
 /* Toggle between adding and removing the "responsive" class to `ul` when the user clicks on the hamburger icon */
