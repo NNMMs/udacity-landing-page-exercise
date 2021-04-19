@@ -36,11 +36,11 @@ const sections = document.querySelectorAll("section");
  */
 function buildNavigationMenu() {
     const fragment = document.createDocumentFragment();
-    for (section of sections) {
+    sections.forEach(section => {
         const sectionListItem = document.createElement("li");
         sectionListItem.innerHTML = `<a class="menu__link" href="#${section.getAttribute("id")}" data-related-section="${section.getAttribute("id")}">${section.getAttribute("data-nav")}</a>`;
         fragment.appendChild(sectionListItem);
-    }
+    });
     buildResponsiveList(fragment);
     navBarList.appendChild(fragment);
 }
